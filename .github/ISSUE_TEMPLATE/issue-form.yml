@@ -1,0 +1,46 @@
+name: New Issue
+description: Description
+title: "Dummy Form"
+labels: issue
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a dummy github issue form
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Enter a brief description
+      placeholder: Include relevant links 
+      value: "Description"
+    validations:
+      required: true
+  - type: dropdown
+    id: options
+    attributes:
+      label: Options
+      description: Select Option
+      options:
+        - a
+        - b
+        - c
+        - d
+    validations:
+      required: true
+  - type: dropdown
+    id: number
+    attributes:
+      label: Number
+      multiple: true
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+  - type: checkboxes
+    id: check
+    attributes:
+      label: Agree
+      options:
+          required: true
