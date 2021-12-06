@@ -1,7 +1,7 @@
 name: New Issue
 description: Description
 title: "Dummy Form"
-labels: issue
+labels: ["issue"]
 body:
   - type: markdown
     attributes:
@@ -34,13 +34,14 @@ body:
       label: Number
       multiple: true
       options:
-        - 1
-        - 2
-        - 3
-        - 4
+        - "1"
+        - "2"
+        - "3"
+        - "4"
   - type: checkboxes
     id: check
     attributes:
       label: Agree
       options:
+        - label: Yes/No?
           required: true
